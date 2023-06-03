@@ -20,7 +20,7 @@ The general work flow is:
 1. sequence alignment and library generation: cellranger v7
 2. remove ambient RNA using cellbender
 3. remove doublet using DoubletDetection
-4. Preprocessing of combined datasets: including RPCA for data integration, remove one cluster that is potential doublet. 
+4. Preprocessing of combined datasets: including RPCA for data integration. remove clusters that express marker genes of more than 2 cell types
 5. Select PT cluster: redo RPCA for data integration, remove one cluster that is potential doublet. 
 6. Select TAL cluster: repeat step 5. 
 7. DEG of PT subcluter in AKI samples only, then perform GSEA using FGSEA package.
